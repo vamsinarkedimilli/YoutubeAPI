@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo brand-logo-margin">Youtube API</a>
+        </div>
+    </nav>
+    <br/>
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s3">
+                <input id="channel_name" type="text" class="validate">
+                <label for="channel_name">Channel Id</label>
+            </div>
+        </div>
+    </form>
+    <button class="btn waves-effect waves-light" type="submit" name="action" onclick="getChannelDetails()">Get Channel Details
+        <i class="material-icons right">send</i>
+    </button>
+    <div class="channel-details">
+        <p class="channel-name"></p>
+        <p class="channel-description"></p>
+        <p class="channel-subscribers"></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
