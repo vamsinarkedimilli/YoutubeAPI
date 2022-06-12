@@ -20,7 +20,7 @@ function getChannelDetails(){
         document.getElementById('link-btn').href='https://www.youtube.com/channel/'+channel;
         document.getElementById("get-playlists").addEventListener('click',getPlaylists)
     }).catch((error)=>{
-        console.log(error);
+        console.log(error);  
     })
 }
 
