@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="./index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <script src="./index.js"></script>
 </head>
 <body>
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo brand-logo-margin">Youtube API</a>
+            <a href="https://www.youtube.com" target="_blank" class="brand-logo brand-logo-margin">Youtube API</a>
         </div>
     </nav>
     <br/>
@@ -28,13 +29,27 @@
     <button class="btn waves-effect waves-light" type="submit" name="action" onclick="getChannelDetails()">Get Channel Details
         <i class="material-icons right">send</i>
     </button>
-    <div class="channel-details">
-        <p class="channel-name"></p>
-        <p class="channel-description"></p>
-        <p class="channel-subscribers"></p>
+
+    <br/><hr/><br/>
+    <div class="channel-content">
+        <div class="channel-details">
+            <p id="channel-name"></p>
+            <p id="channel-subscribers"></p>
+            <p id="channel-videos"></p>
+            <p id="channel-description"></p>
+            <a href="" id="link-btn" target="_blank"><button class="btn waves-effect waves-light" type="submit" name="action">Visit Channel
+                <i class="material-icons right">pin_invoke</i>
+            </button></a>
+            <button class="btn waves-effect waves-light" type="submit" name="action" id="get-playlists">Get Playlists
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+        <img src="" id="channel-image"/>
+    </div>
+    <div class="playlists">
+        <hr/>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>

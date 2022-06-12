@@ -5,6 +5,7 @@ const youtubeAPI = (channelid,cb) =>{
         if(error){
             cb('An error occures',undefined)
         } else{
+            console.log(response);
             cb(undefined,response.body.items[0])
         }
     })
